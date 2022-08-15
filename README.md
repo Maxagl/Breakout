@@ -4,10 +4,9 @@
 1. Breakout from scratch
 2. Rendering using opengl
 3. Physics using Box2d
+
 The basci framework is from the turtorial in the referecen. I added box2d to the framework to
-have more real Physic effects
-
-
+have more real Physic effects.
 
 ## Music
 1. [Man is He Mega - GLBML GeoffreyBurch](https://pixabay.com/music/video-games-man-is-he-mega-glbml-22045/)
