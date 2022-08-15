@@ -26,7 +26,10 @@ const unsigned int SCREEN_HEIGHT = 600;
 
 Game Breakout(SCREEN_WIDTH, SCREEN_HEIGHT);
 
-//int main(int argc, char* argv[])
+// **Need console use main
+// int main(int argc, char* argv[])
+
+// **Don't need console use WinMain, remeber to set the linker, system to Windows
 int CALLBACK WinMain(
     __in  HINSTANCE hInstance,
     __in  HINSTANCE hPrevInstance,

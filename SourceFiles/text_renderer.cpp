@@ -12,14 +12,14 @@
 #include <ft2build.h>
 #include FT_FREETYPE_H //需要把freetype的路径也加进去才行
 
-#include "../HeaderFiles//text_renderer.h"
+#include "../HeaderFiles/text_renderer.h"
 #include "../HeaderFiles/resource_manager.h"
 
 
 TextRenderer::TextRenderer(unsigned int width, unsigned int height)
 {
     // load and configure shader
-    this->TextShader = ResourceManager::LoadShader("text.vs", "text.frag", nullptr, "text");
+    this->TextShader = ResourceManager::LoadShader("Shaders/text.vs", "Shaders/text.frag", nullptr, "text");
     this->TextShader.SetMatrix4("projection", glm::ortho(0.0f, static_cast<float>(width), static_cast<float>(height), 0.0f), true);
     this->TextShader.SetInteger("text", 0);
     // configure VAO/VBO for texture quads

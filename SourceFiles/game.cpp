@@ -282,15 +282,15 @@ void Game::ProcessInput(float dt)
             this->Level = (this->Level + 1) % 5;
             this->KeysProcessed[GLFW_KEY_W] = true;
             if (this->Level == 0)
-                RenderingLevel.Load(myworld.get(), "one.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/one.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 1)
-                RenderingLevel.Load(myworld.get(), "two.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/two.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 2)
-                RenderingLevel.Load(myworld.get(), "three.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/three.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 3)
-                RenderingLevel.Load(myworld.get(), "four.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/four.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 4)
-                RenderingLevel.Load(myworld.get(), "five.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/five.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
         }
         if (this->Keys[GLFW_KEY_S] && !this->KeysProcessed[GLFW_KEY_S])
         {
@@ -301,15 +301,15 @@ void Game::ProcessInput(float dt)
             //this->Level = (this->Level - 1) % 4;
             this->KeysProcessed[GLFW_KEY_S] = true;
             if (this->Level == 0)
-                RenderingLevel.Load(myworld.get(), "one.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/one.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 1)
-                RenderingLevel.Load(myworld.get(), "two.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/two.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 2)
-                RenderingLevel.Load(myworld.get(), "three.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/three.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 3)
-                RenderingLevel.Load(myworld.get(), "four.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/four.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
             else if (this->Level == 4)
-                RenderingLevel.Load(myworld.get(), "five.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+                RenderingLevel.Load(myworld.get(), "levels/five.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
         }
     }
 
@@ -429,8 +429,9 @@ void Game::Render()
     if (this->State == GAME_MENU)
     {
         Text->RenderText("Press ENTER to start", 250.0f, this->Height / 2.0f, 1.0f);
-        Text->RenderText("Press W or S to select level", 245.0f, this->Height / 2.0f + 20.0f, 0.75f);
-        Text->RenderText("Press A or D to move paddle", 245.0f, this->Height / 2.0f + 40.0f, 0.75f);
+        Text->RenderText("Press W or S to select level", 250.0f, this->Height / 2.0f + 25.0f, 0.75f);
+        Text->RenderText("Press A or D to move paddle", 250.0f, this->Height / 2.0f + 45.0f, 0.75f);
+        Text->RenderText("Press Space to launch", 250.0f, this->Height / 2.0f + 65.0f, 0.75f);
     }
     if (this->State == GAME_WIN)
     {
@@ -444,8 +445,9 @@ void Game::Render()
             glm::vec2(0.0f, 0.0f), glm::vec2(this->Width / 10.0f, this->Height / 10.0f), 0.0f
         );
         Text->RenderText("Press ENTER to start", 250.0f, this->Height / 2.0f + 60.0f, 1.0f);
-        Text->RenderText("Press W or S to select level", 245.0f, this->Height / 2.0f + 80.0f, 0.75f);
-        Text->RenderText("Press A or D to move paddle", 245.0f, this->Height / 2.0f + 100.0f, 0.75f);
+        Text->RenderText("Press W or S to select level", 245.0f, this->Height / 2.0f + 85.0f, 0.75f);
+        Text->RenderText("Press A or D to move paddle", 245.0f, this->Height / 2.0f + 105.0f, 0.75f);
+        Text->RenderText("Press Space to launch", 245.0f, this->Height / 2.0f + 125.0f, 0.75f);
     }
     
 }
@@ -453,15 +455,15 @@ void Game::Render()
 void Game::ResetLevel()
 {
     if (this->Level == 0)
-        RenderingLevel.Load(myworld.get(), "one.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+        RenderingLevel.Load(myworld.get(), "levels/one.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
     else if (this->Level == 1)
-        RenderingLevel.Load(myworld.get(), "two.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+        RenderingLevel.Load(myworld.get(), "levels/two.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
     else if (this->Level == 2)
-        RenderingLevel.Load(myworld.get(), "three.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+        RenderingLevel.Load(myworld.get(), "levels/three.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
     else if (this->Level == 3)
-        RenderingLevel.Load(myworld.get(), "four.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+        RenderingLevel.Load(myworld.get(), "levels/four.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
     else if (this->Level == 4)
-        RenderingLevel.Load(myworld.get(), "five.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
+        RenderingLevel.Load(myworld.get(), "levels/five.lvl", this->Width / 10.0f, this->Height / 2 / 10.0f);
     this->Lives = 3;
 }
 

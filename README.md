@@ -5,7 +5,7 @@
 2. Rendering using opengl
 3. Physics using Box2d
 
-The basci framework is from the turtorial in the referecen. I added box2d to the framework to
+The basic framework is from the turtorial in the reference. I added box2d to the framework to
 have more real Physic effects.
 
 ## Music
