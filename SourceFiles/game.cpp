@@ -6,20 +6,20 @@
 ** Creative Commons, either version 4 of the License, or (at your
 ** option) any later version.
 ******************************************************************/
-#include "../HeaderFiles/game.h"
-#include "../HeaderFiles/resource_manager.h"
-#include "../HeaderFiles/sprite_renderer.h"
-#include "../HeaderFiles/game_level.h"
+#include "game.h"
+#include "resource_manager.h"
+#include "sprite_renderer.h"
+#include "game_level.h"
 #include <tuple>
-#include "../HeaderFiles/particle_generator.h"
-#include "../HeaderFiles/post_processor.h"
+#include "particle_generator.h"
+#include "post_processor.h"
 #include <irrklang/irrKlang.h>
-#include "../HeaderFiles/text_renderer.h"
+#include "text_renderer.h"
 #include <sstream>
 #include <iostream>
 #include <math.h> 
-#include "../HeaderFiles/Contactlistener.h"
-#include "../HeaderFiles/light2d.h"
+#include "Contactlistener.h"
+#include "light2d.h"
 using namespace irrklang;
 #define DEGTORAD 0.0174532925199432957f
 #define RADTODEG 57.295779513082320876f

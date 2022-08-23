@@ -1,4 +1,4 @@
-#include "../HeaderFiles/box.h"
+#include "box.h"
 box::box(std::string type, float duration, bool activated, bool sensor)
 {
 	_Type = type;

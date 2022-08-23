@@ -12,8 +12,8 @@
 #include <ft2build.h>
 #include FT_FREETYPE_H //需要把freetype的路径也加进去才行
 
-#include "../HeaderFiles/text_renderer.h"
-#include "../HeaderFiles/resource_manager.h"
+#include "text_renderer.h"
+#include "resource_manager.h"
 
 
 TextRenderer::TextRenderer(unsigned int width, unsigned int height)

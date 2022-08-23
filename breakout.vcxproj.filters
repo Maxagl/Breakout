@@ -177,5 +177,6 @@
     <None Include="levels\two.lvl">
       <Filter>level</Filter>
     </None>
+    <None Include="README.md" />
   </ItemGroup>
 </Project>

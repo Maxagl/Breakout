@@ -6,7 +6,7 @@
 ** Creative Commons, either version 4 of the License, or (at your
 ** option) any later version.
 ******************************************************************/
-#include "../HeaderFiles/sprite_renderer.h"
+#include "sprite_renderer.h"
 
 
 SpriteRenderer::SpriteRenderer(Shader& shader)

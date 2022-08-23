@@ -10,8 +10,8 @@
 #include <GLFW/glfw3.h>
 #include <windows.h>
 
-#include "../HeaderFiles/game.h"
-#include "../HeaderFiles/resource_manager.h"
+#include "game.h"
+#include "resource_manager.h"
 
 #include <iostream>
 

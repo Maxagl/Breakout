@@ -83,7 +83,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\opengl\Include;C:\opengl\Include\freetype;$(IncludePath)</IncludePath>
+    <IncludePath>C:\opengl\Include;C:\opengl\Include\freetype;C:\Users\13158\Desktop\ソースファイル-breakout\HeaderFiles;$(IncludePath)</IncludePath>
     <LibraryPath>C:\opengl\Libs_r;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -189,6 +189,7 @@
   <ItemGroup>
     <None Include="levels\five.lvl" />
     <None Include="levels\four.lvl" />
+    <None Include="README.md" />
     <None Include="Shaders\light2d.frag" />
     <None Include="Shaders\light2d.vs" />
     <None Include="levels\one.lvl" />
