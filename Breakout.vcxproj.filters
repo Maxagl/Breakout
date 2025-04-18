@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="资源文件\shaders">
+      <UniqueIdentifier>{74ac3fec-b3df-493d-a6c4-ec8542f831ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\textures">
+      <UniqueIdentifier>{3218a492-90ad-4327-bca2-e49a1d8a9b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\levels">
+      <UniqueIdentifier>{28fb9421-aa17-4b7d-9d5c-1e5bfd72e341}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Texture2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ResourceManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SpriteRenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameLevel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\BallObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture2D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="include\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SpriteRenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameLevel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BallObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\light2d.frag">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\light2d.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\particle.frag">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\particle.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\post_processing.frag">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\post_processing.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\sprite.frag">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\sprite.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\text.frag">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="shaders\text.vs">
+      <Filter>资源文件\shaders</Filter>
+    </None>
+    <None Include="levels\five.lvl">
+      <Filter>资源文件\levels</Filter>
+    </None>
+    <None Include="levels\four.lvl">
+      <Filter>资源文件\levels</Filter>
+    </None>
+    <None Include="levels\one.lvl">
+      <Filter>资源文件\levels</Filter>
+    </None>
+    <None Include="levels\three.lvl">
+      <Filter>资源文件\levels</Filter>
+    </None>
+    <None Include="levels\two.lvl">
+      <Filter>资源文件\levels</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\awesomeface.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\background.jpg">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\block.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\block_solid.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\cai.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\circleColored.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\paddle.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\particle.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\powerup_chaos.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\powerup_confuse.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\powerup_increase.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\powerup_passthrough.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\powerup_speed.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\powerup_sticky.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\xiaojiejie.jpg">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\xiaojiejie1.jpg">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\xiaojiejie2.jpg">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+    <Image Include="images\zhipian.png">
+      <Filter>资源文件\textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
