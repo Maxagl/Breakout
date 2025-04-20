@@ -9,7 +9,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include "game.h"
+#include "Game.h"
 #include "ResourceManager.h"
 
 #include <iostream>
@@ -41,6 +41,9 @@ int main(int argc, char* argv[])
 
     // glad: load all OpenGL function pointers
     // ---------------------------------------
+    // glfwGetProcAddress是个函数地址
+    // GLADloadproc是个函数指针类型
+    // gladLoadGLLoader是个函数
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD" << std::endl;

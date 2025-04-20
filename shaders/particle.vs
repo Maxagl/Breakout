@@ -10,7 +10,7 @@ uniform vec4 color;
 
 void main()
 {
-    float scale = 1.5f;
+    float scale = 4.f;
     TexCoords = vertex.zw;
     ParticleColor = color;
     gl_Position = projection * vec4((vertex.xy *scale) + offset, 0.0, 1.0);

@@ -23,6 +23,8 @@
     <ClInclude Include="include\Game.h" />
     <ClInclude Include="include\GameLevel.h" />
     <ClInclude Include="include\GameObject.h" />
+    <ClInclude Include="include\ParticleGenerator.h" />
+    <ClInclude Include="include\PostProcessor.h" />
     <ClInclude Include="include\ResourceManager.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\SpriteRenderer.h" />
@@ -35,6 +37,8 @@
     <ClCompile Include="src\GameLevel.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\glad\glad.c" />
+    <ClCompile Include="src\ParticleGenerator.cpp" />
+    <ClCompile Include="src\PostProcessor.cpp" />
     <ClCompile Include="src\ResourceManager.cpp" />
     <ClCompile Include="src\Shader.cpp" />
     <ClCompile Include="src\SpriteRenderer.cpp" />
@@ -130,7 +134,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(SolutionDir)\opengl\include;$(SolutionDir)\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)opengl\include;$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)\opengl\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
