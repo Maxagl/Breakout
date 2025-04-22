@@ -22,6 +22,9 @@
     <Filter Include="资源文件\levels">
       <UniqueIdentifier>{28fb9421-aa17-4b7d-9d5c-1e5bfd72e341}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\audio">
+      <UniqueIdentifier>{c4ccfbfc-be4c-484c-81a4-9196bb976de8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Game.h">
@@ -52,6 +55,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\PostProcessor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PowerUp.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -90,6 +96,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\PostProcessor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\miniaudio.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -195,5 +204,28 @@
     <Image Include="images\zhipian.png">
       <Filter>资源文件\textures</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="audio\bleep.mp3">
+      <Filter>资源文件\audio</Filter>
+    </Media>
+    <Media Include="audio\bleep.wav">
+      <Filter>资源文件\audio</Filter>
+    </Media>
+    <Media Include="audio\breakout.mp3">
+      <Filter>资源文件\audio</Filter>
+    </Media>
+    <Media Include="audio\man-is-he-mega-glbml-22045.mp3">
+      <Filter>资源文件\audio</Filter>
+    </Media>
+    <Media Include="audio\powerup.wav">
+      <Filter>资源文件\audio</Filter>
+    </Media>
+    <Media Include="audio\solid.wav">
+      <Filter>资源文件\audio</Filter>
+    </Media>
+    <Media Include="audio\backgroundMusic.mp3">
+      <Filter>资源文件\audio</Filter>
+    </Media>
   </ItemGroup>
 </Project>

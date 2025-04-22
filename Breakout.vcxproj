@@ -25,6 +25,7 @@
     <ClInclude Include="include\GameObject.h" />
     <ClInclude Include="include\ParticleGenerator.h" />
     <ClInclude Include="include\PostProcessor.h" />
+    <ClInclude Include="include\PowerUp.h" />
     <ClInclude Include="include\ResourceManager.h" />
     <ClInclude Include="include\Shader.h" />
     <ClInclude Include="include\SpriteRenderer.h" />
@@ -37,6 +38,7 @@
     <ClCompile Include="src\GameLevel.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\glad\glad.c" />
+    <ClCompile Include="src\miniaudio.cpp" />
     <ClCompile Include="src\ParticleGenerator.cpp" />
     <ClCompile Include="src\PostProcessor.cpp" />
     <ClCompile Include="src\ResourceManager.cpp" />
@@ -80,6 +82,15 @@
     <Image Include="images\xiaojiejie1.jpg" />
     <Image Include="images\xiaojiejie2.jpg" />
     <Image Include="images\zhipian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="audio\backgroundMusic.mp3" />
+    <Media Include="audio\bleep.mp3" />
+    <Media Include="audio\bleep.wav" />
+    <Media Include="audio\breakout.mp3" />
+    <Media Include="audio\man-is-he-mega-glbml-22045.mp3" />
+    <Media Include="audio\powerup.wav" />
+    <Media Include="audio\solid.wav" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

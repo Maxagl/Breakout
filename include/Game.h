@@ -4,6 +4,7 @@
 
 #include "GameLevel.h"
 #include "BallObject.h"
+#include "PowerUp.h"
 
 enum GameState {
     GAME_ACTIVE,
@@ -32,6 +33,7 @@ public:
     bool                    Keys[1024];
     unsigned int            Width, Height;
     std::vector<GameLevel>  Levels;
+    std::vector<PowerUp>    PowerUps;
     unsigned int            Level;
     // constructor/destructor
     Game(unsigned int width, unsigned int height);
@@ -46,6 +48,13 @@ public:
     // reset
     void ResetLevel();
     void ResetPlayer();
+
+    // powerups
+    void SpawnPowerUps(GameObject& block);
+    void UpdatePowerUps(float dt);
+    bool IsOtherPowerUpActive(std::vector<PowerUp>& powerUps, std::string type);
+    bool ShouldSpawn(unsigned int chance);
+    void ActivatePowerUp(PowerUp& powerUp);
 
     Collision CheckCollision(BallObject& one, GameObject& two);
     bool CheckCollision(GameObject& one, GameObject& two);
