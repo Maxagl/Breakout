@@ -25,6 +25,9 @@
     <Filter Include="资源文件\audio">
       <UniqueIdentifier>{c4ccfbfc-be4c-484c-81a4-9196bb976de8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\font">
+      <UniqueIdentifier>{0e079c13-4c4c-4e16-afb6-95f9656afaaf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Game.h">
@@ -58,6 +61,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="include\PowerUp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextRenderer.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -99,6 +105,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\miniaudio.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextRenderer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -227,5 +236,19 @@
     <Media Include="audio\backgroundMusic.mp3">
       <Filter>资源文件\audio</Filter>
     </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="font\BROADW.TTF">
+      <Filter>资源文件\font</Filter>
+    </Font>
+    <Font Include="font\PixeloidMono-1G8ae.ttf">
+      <Filter>资源文件\font</Filter>
+    </Font>
+    <Font Include="font\PixeloidSansBold-RpeJo.ttf">
+      <Filter>资源文件\font</Filter>
+    </Font>
+    <Font Include="font\PixeloidSans-nR3g1.ttf">
+      <Filter>资源文件\font</Filter>
+    </Font>
   </ItemGroup>
 </Project>
